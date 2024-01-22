@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1 class="heading">hello world</h1>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="container mx-auto w-full">
+      <nav>
+        <img
+          src="./assets/logo/company-logo.svg"
+          alt=""
+          class="company-logo-nav"
+        />
+      </nav>
+
+      <section class="home-head flex gap-4">
+        <div class="flex card home-head-section-1">
+          <div class="flex flex-col gap-8">
+            <h1 class="head-h1">Design Code & Develop</h1>
+            <h3 class="text-2xl text-gray-400">The technical art of Problem Solving</h3>
+            <div>
+              <button class="btn-primary home-head-btn">Lets Build</button>
+            </div>
+          </div>
+          <div class="">
+            <img src="./assets/images/headerimg.png" alt="" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="card flex flex-col gap-16 home-head-section-2 col-span-2">
+            <h2 class="text-3xl">Have an idea?</h2>
+            <img src="./assets/images/Layer 13.png" alt="" />
+          </div>
+
+          <div class="col-span-1">
+            <div class="flex flex-col gap-4 card p-8 rounded-xl">
+              <img src="./assets/logo/global.svg" alt="" width="44" />
+              <div>
+                <p class="text-5xl font-light">13+</p>
+                <p class="text-3xl font-light text-gray-400">Countries</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div class="flex flex-col gap-4 card p-8 rounded-xl">
+              <img src="./assets/logo/3square.svg" alt="" width="44" />
+              <div>
+                <p class="text-5xl font-light">400+</p>
+                <p class="text-3xl font-light text-gray-400">Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
 </html>

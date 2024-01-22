@@ -1,18 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@100;300;400;500&family=Rubik:ital,wght@0,600;0,700;1,500&display=swap');
+
+
+
 :root {
+    
     --color-bg-primary : #161C22;
-    --color-bg-primary-varient : linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%)
+    --color-bg-primary-varient : linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
+    --text-color-primary: #FFF;
+    --text-color-primary-varient : #F0F3F6;
+    --grey-bg-color: #B5B7B8;
+    --border-radius : 24px;
+    --card-bg: #161C22;
+    
+
 }
 
 
 body{
     background-color: #161C22;
+    font-family: "Roboto" sans-serif;
+    color: #FFF;
 }
 
-.heading {
+
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 40px 10px;
+    align-items: center;
+}
+
+.company-logo-nav {
+    width: 130px;
+    flex-shrink: 0;
+}
+
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.052);
+    border-radius: 24px;
+}
+
+
+
+
+.head-h1 {
     background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
-    font-size: 92px;
-    font-weight: 600;
+    font-size: 95px;
+    font-weight: 500;
     background-clip: text;
     color: transparent;
+    line-height: 100%;
+}
 
+.home-head-section-1{
+    width: 60%;
+    padding: 50px 0 50px 50px;
+    align-items: center;
+}
+
+.home-head-section-2{
+    padding: 50px;
+    align-items: center;
+}
+
+.btn-primary {
+    background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
+    
+    
+}
+
+.home-head-btn {
+    padding: 16px 40px;
+    border-radius: 72px;
+    color: black
 }
