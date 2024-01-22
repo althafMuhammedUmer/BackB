@@ -20,6 +20,7 @@ body{
     background-color: #161C22;
     font-family: "Roboto" sans-serif;
     color: #FFF;
+    line-height: 1.2;
 }
 
 
@@ -29,6 +30,10 @@ nav {
     width: 100%;
     padding: 40px 10px;
     align-items: center;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 .company-logo-nav {
@@ -62,7 +67,9 @@ nav {
 }
 
 .home-head-section-2{
-    padding: 50px;
+    padding: 60px;
+    padding-bottom: 0%;
+    width: 100%;
     align-items: center;
 }
 
@@ -76,4 +83,23 @@ nav {
     padding: 16px 40px;
     border-radius: 72px;
     color: black
+}
+
+
+/* end header */
+
+/* ABOUT US */
+.about-us-h2-color{
+    background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
+    font-size: 58px;
+    font-weight: 400;
+    background-clip: text;
+    color: transparent;
+    line-height: 100%;
+
+}
+
+.about-us-h2 {
+    font-size: 58px;
+    font-weight: 400;
 }

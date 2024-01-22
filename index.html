@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="container mx-auto w-full">
+    <section class="container mx-auto w-full">
       <nav>
         <img
           src="./assets/logo/company-logo.svg"
@@ -20,11 +20,13 @@
         />
       </nav>
 
-      <section class="home-head flex gap-4">
+      <header class="home-head flex gap-4">
         <div class="flex card home-head-section-1">
           <div class="flex flex-col gap-8">
             <h1 class="head-h1">Design Code & Develop</h1>
-            <h3 class="text-2xl text-gray-400">The technical art of Problem Solving</h3>
+            <h3 class="text-2xl text-gray-200 pr-60">
+              The technical art of Problem Solving
+            </h3>
             <div>
               <button class="btn-primary home-head-btn">Lets Build</button>
             </div>
@@ -58,7 +60,79 @@
             </div>
           </div>
         </div>
-      </section>
-    </header>
+      </header>
+    </section>
+
+    <section class="about-us container card mx-auto items-start p-8">
+      <div class="flex justify-between">
+        <p class="text-xs text-gray-400">• ABOUT US</p>
+        <p class="text-xs text-gray-400">
+          ITS ALL ABOUT PEOPLE, WHO YOU ARE WITH
+        </p>
+      </div>
+      <div class="flex gap-14">
+        <div class="flex flex-col py-8 gap-12">
+          <img src="./assets/logo/arrow-down.svg" alt="" width="32" />
+          <p class="text-gray-400 text-sm">
+            Tech pioneers forging global impact through passion and innovation
+          </p>
+        </div>
+
+        <article class="flex flex-col gap-4 py-5">
+          <div>
+            <h1 class="about-us-h2-color">Innovative Tech Journey:</h1>
+            <h1 class="about-us-h2">Passion-Driven Start</h1>
+            <h1 class="about-us-h2">from 2019</h1>
+          </div>
+          <p class="text-gray-400 pr-40 text-xl">
+            Founded in 2019 by five friends driven by passion, our tech company
+            has rapidly evolved. We've expanded our innovative services to 13+
+            countries, successfully completing 400+ projects. From humble
+            beginnings to a global presence, we continue to shape the future
+            with cutting-edge solutions, creativity, and a commitment to
+            excellence.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="what-we-do container card p-8 mx-auto">
+      <div class="flex gap-24 items-center">
+        <p class="text-xs text-gray-400">• WHAT WE DO</p>
+        <div class="flex gap-3">
+          <button class="text-xs text-black bg-gray-300 px-4 py-2 rounded-full">
+            Web Development
+          </button>
+          <button
+            class="text-xs text-gray-400 border border-gray-300 px-4 py-2 rounded-full"
+          >
+            App Development
+          </button>
+          <button
+            class="text-xs text-gray-400 border border-gray-300 px-4 py-2 rounded-full"
+          >
+            Branding
+          </button>
+        </div>
+      </div>
+      <div class="flex gap-56 mt-14">
+        <div class="items-center flex">
+          <img src="./assets/logo/arrow-down.svg" alt="" width="32" />
+        </div>
+        <div class="flex items-center gap-8">
+          <p>01</p>
+          <div class="flex flex-col gap-8">
+            <div class="flex gap-12">
+              <h1 class="text-6xl text-light">Single Page</h1>
+              <button class="border border-gray-300 rounded-full">
+                <img src="./assets/logo/arrow-left.svg" alt="" />
+              </button>
+            </div>
+            <p class="text-xs text-gray-400">UX/UI Design • Ecommerce • Digital Products • Design System • Web Development</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
