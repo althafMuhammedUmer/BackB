@@ -1,105 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@100;300;400;500&family=Rubik:ital,wght@0,600;0,700;1,500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@100;300;400;500&family=Rubik:ital,wght@0,600;0,700;1,500&display=swap");
 
 :root {
-    
-    --color-bg-primary : #161C22;
-    --color-bg-primary-varient : linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
-    --text-color-primary: #FFF;
-    --text-color-primary-varient : #F0F3F6;
-    --grey-bg-color: #B5B7B8;
-    --border-radius : 24px;
-    --card-bg: #161C22;
-    
-
+  --color-bg-primary: #161c22;
+  --color-bg-primary-varient: linear-gradient(
+    86deg,
+    #35dbff -6.84%,
+    #36aeff 57.13%,
+    #3683ff 118.48%
+  );
+  --text-color-primary: #fff;
+  --text-color-primary-varient: #f0f3f6;
+  --grey-bg-color: #b5b7b8;
+  --border-radius: 24px;
+  --card-bg: #161c22;
 }
 
-
-body{
-    background-color: #161C22;
-    font-family: "Roboto" sans-serif;
-    color: #FFF;
-    line-height: 1.2;
+body {
+  background-color: #161c22;
+  font-family: "Roboto" sans-serif;
+  color: #fff;
+  line-height: 1.2;
 }
-
-
 
 nav {
-    display: flex;
-    width: 100%;
-    padding: 40px 10px;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+  align-items: center;
 }
 
 section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .company-logo-nav {
-    width: 130px;
-    flex-shrink: 0;
+  width: 130px;
+  flex-shrink: 0;
 }
-
-
 
 .card {
-    background-color: rgba(255, 255, 255, 0.034);
-    border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.034);
+  width: 100%;
+  border-radius: 24px;
 }
-
-
-
 
 .head-h1 {
-    background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
-    font-size: 95px;
-    font-weight: 500;
-    background-clip: text;
-    color: transparent;
-    line-height: 100%;
+  background: linear-gradient(
+    86deg,
+    #35dbff -6.84%,
+    #36aeff 57.13%,
+    #3683ff 118.48%
+  );
+  font-size: 95px;
+  font-weight: 500;
+  background-clip: text;
+  color: transparent;
+  line-height: 100%;
 }
 
-.home-head-section-1{
-    width: 60%;
-    padding: 50px 0 50px 50px;
-    align-items: center;
+.home-head-section-1 {
+  width: 100%;
+  padding: 50px 0 50px 50px;
+  align-items: center;
 }
 
-.home-head-section-2{
-    padding: 60px;
-    padding-bottom: 0%;
-    width: 100%;
-    align-items: center;
+.home-head-section-2 {
+  padding: 60px;
+  padding-bottom: 0%;
+  width: 100%;
+  align-items: center;
 }
 
 .btn-primary {
-    background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
-    
-    
+  background: linear-gradient(
+    86deg,
+    #35dbff -6.84%,
+    #36aeff 57.13%,
+    #3683ff 118.48%
+  );
 }
 
 .home-head-btn {
-    padding: 16px 40px;
-    border-radius: 72px;
-    color: black
+  padding: 16px 40px;
+  border-radius: 72px;
+  color: black;
 }
-
 
 /* end header */
 
 /* ABOUT US */
-.h2-color{
-    background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
-    font-size: 58px;
-    font-weight: 400;
-    background-clip: text;
-    color: transparent;
-    line-height: 100%;
-
+.h2-color {
+  background: linear-gradient(
+    86deg,
+    #35dbff -6.84%,
+    #36aeff 57.13%,
+    #3683ff 118.48%
+  );
+  font-size: 58px;
+  font-weight: 400;
+  background-clip: text;
+  color: transparent;
+  line-height: 100%;
 }
 
 .h2 {
-    font-size: 58px;
-    font-weight: 400;
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.arrow-left {
+  width: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .headerimg {
+    display: none;
+  }
+
+  .head-h1 {
+    font-size: 48px;
+  }
+  .head-h3 {
+    font-size: 20px;
+    line-height: 1.1;
+    padding: 0%;
+  }
+  .about-us-content {
+    flex-direction: column;
+  }
+  .arrow-down {
+    display: none;
+  }
+  .h2-color,
+  .h2 {
+    font-size: 40px;
+  }
+  .about-us-p {
+    margin-top: 10px;
+  }
+  .what-we-do {
+    flex-direction: column;
+  }
+  .arrow-left {
+    width: 80px;
+  }
+  .company-logo-nav{
+    width: 120px;
+  }
 }
