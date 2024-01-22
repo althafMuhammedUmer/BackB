@@ -44,7 +44,7 @@ section {
 
 
 .card {
-    background-color: rgba(255, 255, 255, 0.052);
+    background-color: rgba(255, 255, 255, 0.034);
     border-radius: 24px;
 }
 
@@ -89,7 +89,7 @@ section {
 /* end header */
 
 /* ABOUT US */
-.about-us-h2-color{
+.h2-color{
     background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
     font-size: 58px;
     font-weight: 400;
@@ -99,7 +99,7 @@ section {
 
 }
 
-.about-us-h2 {
+.h2 {
     font-size: 58px;
     font-weight: 400;
 }
