@@ -1,0 +1,18 @@
+:root {
+    --color-bg-primary : #161C22;
+    --color-bg-primary-varient : linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%)
+}
+
+
+body{
+    background-color: #161C22;
+}
+
+.heading {
+    background: linear-gradient(86deg, #35DBFF -6.84%, #36AEFF 57.13%, #3683FF 118.48%);
+    font-size: 92px;
+    font-weight: 600;
+    background-clip: text;
+    color: transparent;
+
+}
