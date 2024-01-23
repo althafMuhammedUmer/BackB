@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -243,14 +251,19 @@
     </section>
     <!-- Ends What we do section -->
 
-    <section class="container mx-auto card p-8 ">
+    <section class="container mx-auto card p-8">
       <div class="flex justify-between">
         <p class="text-xs text-gray-400">• CASE STUDIES</p>
         <p class="text-xs text-gray-400">BY OUR creative  team</p>
       </div>
-      <div class="grid lg:grid-cols-4 lg:mt-8 mt-4 lg:gap-8 justify-between  ">
+      <div class="grid lg:grid-cols-4 lg:mt-8 mt-4 lg:gap-8 justify-between">
         <div class="">
-          <img src="./assets/logo/arrow-down.svg" alt="" width="32" class="hidden lg:block"/>
+          <img
+            src="./assets/logo/arrow-down.svg"
+            alt=""
+            width="32"
+            class="hidden lg:block"
+          />
         </div>
 
         <div class="col-span-2">
