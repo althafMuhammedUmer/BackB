@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgGray: "#B5B7B8",
+              cardcolor: ' rgba(255, 255, 255, 0.034);'
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <nav class="container mx-auto">
+        <img
+          src="./assets/logo/company-logo.svg"
+          alt=""
+          class="company-logo-nav"
+        />
+      </nav>
+    </section>
+
+    <section class="container mx-auto flex flex-col gap-6">
+      <p>• web development / single page website</p>
+      <ul class="flex gap-2">
+        <li class="px-8 py-2 bg-bgGray rounded-full text-black">Single Page</li>
+        <li class="px-8 py-2 border border-gray-400 rounded-full">
+          Food Delivery
+        </li>
+        <li class="px-8 py-2 border border-gray-400 rounded-full">Portfolio</li>
+        <li class="px-8 py-2 border border-gray-400 rounded-full">Ecommerce</li>
+      </ul>
+    </section>
+
+    <section class="flex container mx-auto gap-24 mt-16 items-center">
+      <div>
+        <div class="leading-10">
+          <span class="h2-color">Innovation Unleashed</span>
+          <span class="h2"> Showcasing our work and stories</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <p class="text-lg text-gray-400">
+          Founded in 2019 by five friends driven by passion, our tech company
+          has rapidly evolved. We've expanded our innovative services to 13+
+          countries, successfully completing 400+ projects.
+        </p>
+
+        <p class="text-md text-gray-400">
+          Time Frame: 3 to 5 months Cost: 50k - 300k
+        </p>
+        <div class="flex gap-8 items-center cursor-pointer mt-4">
+          <p>VIEW OUR SAMPLES</p>
+          <div class="w-20 border border-gray-200"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto rounded-full mt-12">
+      <img src="./assets/images/img1.png" alt="" />
+    </section>
+
+    <section class="container mx-auto mt-12 card p-8">
+      <div class="flex justify-between">
+        <p class="text-xs text-gray-400">• WORK</p>
+        <p class="text-xs text-gray-400">BY OUR creative  team</p>
+      </div>
+
+      <div class="flex justify-between mt-12">
+        <h2 class="h2-color">Our Works</h2>
+        <p class="text-lg text-gray-400 w-1/2">
+          Founded in 2019 by five friends driven by passion, our tech company
+          has rapidly evolved. We've expanded our innovative services to 13+
+          countries, successfully completing 400+ projects.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid lg:grid-cols-2 container mx-auto gap-4">
+      <div class="product-card bg-cardcolor  rounded-xl">
+        <img src="./assets/images/Rectangle 240 (1).png" alt=""  class="w-full object-cover"/>
+        <div class="px-6 py-4">
+            <div class="font-bold lg:text-xl mb-2">Posh Heights Realty</div>
+            
+            <p class="text-gray-700 text-base">
+                Portfolio Website.
+            </p>
+        </div>
+      </div>
+
+      <div class="product-card bg-cardcolor rounded-xl">
+        <img src="./assets/images/Rectangle 240 (2).png" alt=""  class="w-full object-cover"/>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+            
+            <p class="text-gray-700 text-base">
+                Portfolio Website.
+            </p>
+        </div>
+      </div>
+
+      <div class="product-card bg-cardcolor rounded-xl">
+        <img src="./assets/images/Rectangle 240 (3).png" alt=""  class="w-full object-cover"/>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+            
+            <p class="text-gray-700 text-base">
+               Portfolio Website.
+            </p>
+        </div>
+      </div>
+
+      <div class="product-card bg-cardcolor rounded-xl">
+        <img src="./assets/images/Rectangle 240.png" alt=""  class="w-full object-cover"/>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+            
+            <p class="text-gray-700 text-base">
+               Portfolio Website.
+            </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

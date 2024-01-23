@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgGray: "#B5B7B8",
+              cardcolor: " rgba(255, 255, 255, 0.034);",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <nav class="container mx-auto">
+        <img
+          src="./assets/logo/company-logo.svg"
+          alt=""
+          class="company-logo-nav"
+        />
+      </nav>
+    </section>
+
+    <section class="lg:flex container gap-24 mx-auto  p-8 card ">
+      <div class="flex flex-col gap-2">
+        <p class="text-xs text-gray-400 mb-8">• CONTACT US</p>
+        <h2 class="h2-color lg:text-start text-center">Contact Us</h2>
+        <p class="text-lg text-gray-400 lg:w-3/4 lg:text-start text-center">
+          Reach out to us with any questions, feedback, or inquiries. Our
+          dedicated team is here to assist you.
+        </p>
+      </div>
+
+      <div class="flex flex-col lg:text-lg md:text-md text-gray-400 mt-8 bg-colorcard  ">
+        <div class="contact flex lg:flex-col justify-between">
+          <div>
+            <p>Contact:</p>
+            <p>+91 944 769 4232</p>
+          </div>
+          <div>
+            <p>Email:</p>
+            <p>info@backb.in</p>
+          </div>
+        </div>
+        <div class="address ">
+          <p>Address:</p>
+          <p>South Beach, Calicut, 673001</p>
+        </div>
+        <div class="socials flex gap-3">
+          <img src="./assets/socials/whatsapp.svg" alt="" />
+          <img src="./assets/socials/instagram.svg" alt="" />
+          <img src="./assets/socials/linkedin.svg" alt="" />
+          <img src="./assets/socials/behance.svg" alt="" />
+          <img src="./assets/socials/dribble.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto mt-8">
+      <form action="" class="w-full lg:gap-3 gap-2 flex flex-col">
+        <input
+          type="text"
+          class="w-full px-8 py-4 rounded-md card"
+          placeholder="Your Name"
+        />
+        <input
+          type="text"
+          class="w-full px-8 py-4 rounded-md card"
+          placeholder="Email Address"
+        />
+        <textarea
+          class="px-8 py-4 rounded-md card resize-none"
+          id="description"
+          name="description"
+          rows="4"
+          cols="50"
+          placeholder="Enter your description here..."
+        ></textarea>
+        <div class="flex">
+          <input
+            type="text"
+            class="px-8 py-4 card rounded-md"
+            placeholder="Phone Number"
+          />
+          <button
+            class="flex gap-3 items-center px-8 py-4 bg-blue-400 rounded-md text-2xl"
+          >
+            send <img src="./assets/logo/arrow-send.svg" alt="" />
+          </button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
