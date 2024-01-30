@@ -10,8 +10,9 @@
         theme: {
           extend: {
             colors: {
+            
               bgGray: "#B5B7B8",
-              cardcolor: ' rgba(255, 255, 255, 0.034);'
+              cardcolor: " rgba(255, 255, 255, 0.034);",
             },
           },
         },
@@ -31,28 +32,42 @@
       </nav>
     </section>
 
-    <section class="container mx-auto flex flex-col gap-6">
-      <p>• web development / single page website</p>
+    <section class="container mx-auto flex flex-col gap-6 p-2">
+      <p class="text-sm text-gray-400">
+        • web development / single page website
+      </p>
       <ul class="flex gap-2">
-        <li class="px-8 py-2 bg-bgGray rounded-full text-black">Single Page</li>
-        <li class="px-8 py-2 border border-gray-400 rounded-full">
+        <li
+          class="lg:px-8 lg:py-2 lg px-2 py-1 bg-bgGray rounded-full text-black text-sm"
+        >
+          Single Page
+        </li>
+        <li
+          class="lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full"
+        >
           Food Delivery
         </li>
-        <li class="px-8 py-2 border border-gray-400 rounded-full">Portfolio</li>
-        <li class="px-8 py-2 border border-gray-400 rounded-full">Ecommerce</li>
+        <li
+          class="lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full"
+        >
+          Portfolio
+        </li>
+        <li
+          class="lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full"
+        >
+          Ecommerce
+        </li>
       </ul>
     </section>
 
-    <section class="flex container mx-auto gap-24 mt-16 items-center">
-      <div>
-        <div class="leading-10">
-          <span class="h2-color">Innovation Unleashed</span>
-          <span class="h2"> Showcasing our work and stories</span>
-        </div>
+    <section class="lg:flex container mx-auto gap-24 lg:mt-16 items-center p-2">
+      <div class="leading-10">
+        <span class="h2-color">Innovation Unleashed</span>
+        <span class="h2"> Showcasing our work and stories</span>
       </div>
 
       <div class="flex flex-col gap-4">
-        <p class="text-lg text-gray-400">
+        <p class="lg:text-lg text-gray-400">
           Founded in 2019 by five friends driven by passion, our tech company
           has rapidly evolved. We've expanded our innovative services to 13+
           countries, successfully completing 400+ projects.
@@ -78,9 +93,9 @@
         <p class="text-xs text-gray-400">BY OUR creative  team</p>
       </div>
 
-      <div class="flex justify-between mt-12">
+      <div class="lg:flex justify-between mt-12">
         <h2 class="h2-color">Our Works</h2>
-        <p class="text-lg text-gray-400 w-1/2">
+        <p class="lg:text-lg text-gray-400 lg:w-1/2 lg:mt-2 mt-4">
           Founded in 2019 by five friends driven by passion, our tech company
           has rapidly evolved. We've expanded our innovative services to 13+
           countries, successfully completing 400+ projects.
@@ -89,47 +104,55 @@
     </section>
 
     <section class="grid lg:grid-cols-2 container mx-auto gap-4">
-      <div class="product-card bg-cardcolor  rounded-xl">
-        <img src="./assets/images/Rectangle 240 (1).png" alt=""  class="w-full object-cover"/>
+      <div class="product-card bg-cardcolor rounded-xl">
+        <img
+          src="./assets/images/Rectangle 240 (1).png"
+          alt=""
+          class="w-full object-cover"
+        />
         <div class="px-6 py-4">
-            <div class="font-bold lg:text-xl mb-2">Posh Heights Realty</div>
-            
-            <p class="text-gray-700 text-base">
-                Portfolio Website.
-            </p>
+          <div class="font-bold lg:text-xl mb-2">Posh Heights Realty</div>
+
+          <p class="text-gray-700 text-base">Portfolio Website.</p>
         </div>
       </div>
 
       <div class="product-card bg-cardcolor rounded-xl">
-        <img src="./assets/images/Rectangle 240 (2).png" alt=""  class="w-full object-cover"/>
+        <img
+          src="./assets/images/Rectangle 240 (2).png"
+          alt=""
+          class="w-full object-cover"
+        />
         <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
-            
-            <p class="text-gray-700 text-base">
-                Portfolio Website.
-            </p>
+          <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+
+          <p class="text-gray-700 text-base">Portfolio Website.</p>
         </div>
       </div>
 
       <div class="product-card bg-cardcolor rounded-xl">
-        <img src="./assets/images/Rectangle 240 (3).png" alt=""  class="w-full object-cover"/>
+        <img
+          src="./assets/images/Rectangle 240 (3).png"
+          alt=""
+          class="w-full object-cover"
+        />
         <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
-            
-            <p class="text-gray-700 text-base">
-               Portfolio Website.
-            </p>
+          <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+
+          <p class="text-gray-700 text-base">Portfolio Website.</p>
         </div>
       </div>
 
       <div class="product-card bg-cardcolor rounded-xl">
-        <img src="./assets/images/Rectangle 240.png" alt=""  class="w-full object-cover"/>
+        <img
+          src="./assets/images/Rectangle 240.png"
+          alt=""
+          class="w-full object-cover"
+        />
         <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
-            
-            <p class="text-gray-700 text-base">
-               Portfolio Website.
-            </p>
+          <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+
+          <p class="text-gray-700 text-base">Portfolio Website.</p>
         </div>
       </div>
     </section>

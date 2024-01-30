@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- swiper js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -64,19 +69,24 @@
     <!-- About Us Section -->
     <section class="about-us container card mx-auto items-start p-8">
       <div class="flex justify-between">
-        <p class="text-xs text-gray-400">• ABOUT US</p>
+        <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
+          <div class="dot"></div>
+          <p>ABOUT US</p>
+        </div>
         <p class="text-xs text-gray-400">
           ITS ALL ABOUT PEOPLE, WHO YOU ARE WITH
         </p>
       </div>
       <div class="flex lg:gap-24 md:gap-16 about-us-content">
         <div class="flex flex-col md:gap-12 lg:py-8">
-          <div class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex">
+          <div
+            class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex"
+          >
             <img
               src="./assets/logo/arrow-down.svg"
               alt=""
               width="24"
-              class="arrow-down "
+              class="arrow-down"
             />
           </div>
           <p class="text-gray-400 text-sm lg:mt-0 md:mt-4 mt-4">
@@ -107,14 +117,19 @@
     <section class="container card p-8 mx-auto items-center">
       <div class="flex lg:gap-36 gap-8 what-we-do">
         <div class="flex flex-col lg:gap-20">
-          <p class="text-xs text-gray-400 mt-3">• WHAT WE DO</p>
+          <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
+            <div class="dot"></div>
+            <p>WHAT WE DO</p>
+          </div>
 
-          <div class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex">
+          <div
+            class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex"
+          >
             <img
               src="./assets/logo/arrow-down.svg"
               alt=""
               width="24"
-              class="arrow-down "
+              class="arrow-down"
             />
           </div>
         </div>
@@ -247,11 +262,16 @@
 
     <section class="container mx-auto card p-8">
       <div class="flex justify-between">
-        <p class="text-xs text-gray-400">• CASE STUDIES</p>
+        <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
+          <div class="dot"></div>
+          <p>CASE STUDIES</p>
+        </div>
         <p class="text-xs text-gray-400">BY OUR creative  team</p>
       </div>
       <div class="grid lg:grid-cols-4 lg:mt-8 mt-4 lg:gap-8 justify-between">
-        <div class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex">
+        <div
+          class="w-10 h-10 flex justify-center items-center border border-gray-300 rounded-full hidden lg:flex"
+        >
           <img
             src="./assets/logo/arrow-down.svg"
             alt=""
@@ -264,7 +284,10 @@
           <h2 class="h2-color">Our Works</h2>
           <h2 class="h2">& Case Studies</h2>
 
-          <a href="/works-and-casestudies.html" class="lg:mt-8 mt-4 mx-1 mb-4 inline-block">
+          <a
+            href="/works-and-casestudies.html"
+            class="lg:mt-8 mt-4 mx-1 mb-4 inline-block"
+          >
             <div class="flex gap-2">
               VIEW WORKS
               <img src="./assets/logo/arrow-send.svg" alt="view" />
@@ -298,5 +321,61 @@
         </div>
       </div>
     </section>
+
+    <section class="container mx-auto card p-8">
+      <div class="swiper">
+        <div class="swiper-wrapper" >
+          <!-- Slides -->
+          <div class="swiper-slide flex items-center justify-center">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+      </div>
+    </section>
+    <!-- swiper cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 5, // Number of slides per view (adjust as needed)
+        spaceBetween: 20, // Space between each slide
+        loop: true, // Enable looping
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
