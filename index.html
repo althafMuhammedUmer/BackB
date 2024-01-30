@@ -324,22 +324,22 @@
 
     <section class="container mx-auto card p-8">
       <div class="swiper">
-        <div class="swiper-wrapper" >
+        <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide flex items-center justify-center">
-            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+            <img src="./assets/logo/client-logo/VI.png"/>
           </div>
           <div class="swiper-slide">
             <img src="./assets/logo/client-logo/ccg.svg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+            <img src="./assets/logo/client-logo/DohaCollege.png" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+            <img src="./assets/logo/client-logo/Allyou.png" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/logo/client-logo/ccg.svg" alt="" />
+            <img src="./assets/logo/client-logo/VI.png" alt="" />
           </div>
           <div class="swiper-slide">
             <img src="./assets/logo/client-logo/ccg.svg" alt="" />
@@ -351,6 +351,53 @@
         <!-- If we need pagination -->
       </div>
     </section>
+
+    <section class="container mx-auto p-8">
+      <div class="swiper2">
+        <div class="swiper-wrapper font-6xl">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <h1 class="lg:text-7xl text-2xl font-medium">DO SOMETHING DIFFRENT</h1>
+          </div>
+          <div class="swiper-slide">
+            <h1 class="lg:text-7xl text-2xl font-medium">DO SOMETHING DIFFRENT</h1>
+          </div>
+          <div class="swiper-slide">
+            <h1 class="lg:text-7xl text-2xl font-medium">DO SOMETHING DIFFRENT</h1>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+      </div>
+    </section>
+
+    <footer class="container mx-auto p-8 flex flex-col gap-12 card">
+      <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
+        <div class="dot"></div>
+        <p class="">
+          Share your creative ideas with us and get back beautiful designs that
+          impress and engage.
+        </p>
+      </div>
+      <div class="flex gap-8 items-center">
+        <h1 class="text-6xl">Lets Start a Project</h1>
+        <img src="/assets/logo/arrow-send.svg" alt="" class="text-white w-16"/>
+      </div>
+      <div class="flex gap-4 justify-end">
+        <img
+          src="/assets/logo/brand-logo/whatsapp.svg"
+          alt=""
+          
+        />
+        <img
+          src="/assets/logo/brand-logo/instagram.svg"
+          alt=""
+          
+        />
+        <img src="/assets/logo/brand-logo/linkedin.svg" alt="" />
+        <img src="/assets/logo/brand-logo/behance.svg" alt="" />
+        <img src="/assets/logo/brand-logo/dribble.svg" alt="" />
+      </div>
+    </footer>
     <!-- swiper cdn js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -358,12 +405,42 @@
       const swiper = new Swiper(".swiper", {
         // Optional parameters
         slidesPerView: 5, // Number of slides per view (adjust as needed)
+        spaceBetween: 10, // Space between each slide
+        loop: true, // Enable looping
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      const swiper2 = new Swiper(".swiper2", {
+        // Optional parameters
+        slidesPerView: 1, // Number of slides per view (adjust as needed)
         spaceBetween: 20, // Space between each slide
         loop: true, // Enable looping
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+
+        autoplay: {
+          delay: 0, // Delay between slides in milliseconds (adjust as needed)
+          disableOnInteraction: false, // Continue sliding even after user interaction
+        },
+
+        speed: 20000,
 
         // Navigation arrows
         navigation: {
