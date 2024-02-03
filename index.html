@@ -12,10 +12,23 @@
     />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgGray: "#B5B7B8",
+              cardcolor: " rgba(255, 255, 255, 0.034);",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <section class="container mx-auto w-full lg:p-8 p-4">
-      <nav class="">
+  <body class="mx-auto">
+    <section class="container lg:w-11/12 mx-auto">
+      <nav class="pt-4 pb-4 mx-auto">
         <img
           src="./assets/logo/company-logo.svg"
           alt=""
@@ -23,22 +36,26 @@
         />
       </nav>
 
-      <header class="home-head flex gap-4 justify-center hero-section ">
-        <div class="flex card home-head-section-1">
+      <header
+        class="container mx-auto flex flex-col lg:flex-row gap-4 hero-section"
+      >
+        <div class="flex card home-head-section-1-container">
           <div class="flex flex-col gap-8">
             <h1 class="head-h1">Design Code & Develop</h1>
             <h3 class="text-2xl text-gray-200 pr-60 head-h3">
               The technical art of Problem Solving
             </h3>
             <div>
-              <button class="btn-primary px-4 py-2 rounded text-black">Lets innovate together</button>
+              <button class="btn-primary px-4 py-2 rounded text-black">
+                Lets innovate together
+              </button>
             </div>
           </div>
-          <div class="headerimg">
+          <div class="headerimg lg:flex hidden">
             <img src="./assets/images/headerimg.png" alt="" />
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 gap-4 home-head-section-2-container">
           <div class="card flex flex-col gap-16 home-head-section-2 col-span-2">
             <h2 class="text-3xl">Have an idea?</h2>
             <img src="./assets/images/Layer 13.png" alt="" />
@@ -53,7 +70,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-1">
+          <div class="col-span-1 ">
             <div class="flex flex-col gap-4 card p-8 rounded-xl">
               <img src="./assets/logo/3square.svg" alt="" width="44" />
               <div>
@@ -67,7 +84,7 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="about-us container card mx-auto items-start p-8">
+    <section class="about-us container lg:w-11/12 card mx-auto items-start p-8">
       <div class="flex justify-between">
         <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
           <div class="dot"></div>
@@ -114,7 +131,7 @@
     <!-- End About Us Section -->
 
     <!-- What we do section -->
-    <section class="container card p-8 mx-auto items-center">
+    <section class="container lg:w-11/12 card p-8 mx-auto items-center">
       <div class="flex lg:gap-36 gap-8 what-we-do">
         <div class="flex flex-col lg:gap-20">
           <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
@@ -260,7 +277,7 @@
     </section>
     <!-- Ends What we do section -->
 
-    <section class="container mx-auto card p-8">
+    <section class="container lg:w-11/12 mx-auto card p-8">
       <div class="flex justify-between">
         <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
           <div class="dot"></div>
@@ -322,12 +339,12 @@
       </div>
     </section>
 
-    <section class="container mx-auto card p-8">
+    <section class="container lg:w-11/12 mx-auto card p-8">
       <div class="swiper">
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide flex items-center justify-center">
-            <img src="./assets/logo/client-logo/VI.png"/>
+            <img src="./assets/logo/client-logo/VI.png" />
           </div>
           <div class="swiper-slide">
             <img src="./assets/logo/client-logo/ccg.svg" alt="" />
@@ -352,25 +369,29 @@
       </div>
     </section>
 
-    <section class="container mx-auto p-8">
+    <section class="mx-auto p-8 ">
       <div class="swiper2">
         <div class="swiper-wrapper font-6xl">
-          <!-- Slides -->
           <div class="swiper-slide">
-            <h1 class="lg:text-7xl text-2xl font-medium">DO SOMETHING DIFFRENT</h1>
+            <h1 class="lg:text-7xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
           </div>
           <div class="swiper-slide">
-            <h1 class="lg:text-7xl text-2xl font-medium">DO SOMETHING DIFFRENT</h1>
+            <h1 class="lg:text-7xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
           </div>
           <div class="swiper-slide">
-            <h1 class="lg:text-7xl text-2xl font-medium">DO SOMETHING DIFFRENT</h1>
+            <h1 class="lg:text-7xl text-2xl font-medium">
+              DO SOMETHING DIFFRENT
+            </h1>
           </div>
         </div>
-        <!-- If we need pagination -->
       </div>
     </section>
 
-    <footer class="container mx-auto p-8 flex flex-col gap-12 card">
+    <footer class="container lg:w-11/12 mx-auto p-8 flex flex-col gap-12 card">
       <div class="text-xs text-gray-400 mt-3 flex gap-2 items-center">
         <div class="dot"></div>
         <p class="">
@@ -380,19 +401,11 @@
       </div>
       <div class="flex gap-8 items-center">
         <h1 class="text-6xl">Lets Start a Project</h1>
-        <img src="/assets/logo/arrow-send.svg" alt="" class="text-white w-16"/>
+        <img src="/assets/logo/arrow-send.svg" alt="" class="text-white w-16" />
       </div>
       <div class="flex gap-4 justify-end">
-        <img
-          src="/assets/logo/brand-logo/whatsapp.svg"
-          alt=""
-          
-        />
-        <img
-          src="/assets/logo/brand-logo/instagram.svg"
-          alt=""
-          
-        />
+        <img src="/assets/logo/brand-logo/whatsapp.svg" alt="" />
+        <img src="/assets/logo/brand-logo/instagram.svg" alt="" />
         <img src="/assets/logo/brand-logo/linkedin.svg" alt="" />
         <img src="/assets/logo/brand-logo/behance.svg" alt="" />
         <img src="/assets/logo/brand-logo/dribble.svg" alt="" />

@@ -24,14 +24,14 @@ body {
   font-family: 'ClashGrotesk-Light', sans-serif;
   color: #fff;
   line-height: 1.0;
+ 
+  
 }
 
-nav {
-  display: flex;
-  width: 100%;
-  padding: 20px 10px;
-  align-items: center;
-}
+
+
+
+
 
 section {
   margin-bottom: 14px;
@@ -39,7 +39,6 @@ section {
 
 .company-logo-nav {
   width: 130px;
-  /* flex-shrink: 0; */
   
 }
 
@@ -63,10 +62,15 @@ section {
   line-height: 100%;
 }
 
-.home-head-section-1 {
+
+.home-head-section-1-container {
   width: 60%;
   padding: 50px 0 50px 50px;
   align-items: center;
+}
+
+.home-head-section-2-container {
+  width: 40%;
 }
 
 .headerimg{
@@ -147,11 +151,13 @@ section {
 }
 
 
-.swiper {
+.swiper, .swiper2 {
   width: 100%;
   overflow: hidden;
   
 }
+
+
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -171,7 +177,12 @@ section {
     display: none;
   }
 
-  .home-head-section-1{
+  .home-head-section-1-container {
+    width: 100%;
+    
+  }
+  
+  .home-head-section-2-container {
     width: 100%;
   }
 
