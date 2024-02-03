@@ -34,135 +34,182 @@
     <section
       class="container lg:w-11/12 mx-auto flex flex-col gap-6 p-4 lg:p-0"
     >
-    
       <p class="text-sm text-gray-400">
         • web development / single page website
       </p>
       <ul class="flex gap-2">
-        <li
-          class="lg:px-8 lg:py-2 lg px-2 py-1 bg-bgGray rounded-full text-black flex justify-center items-center"
-        >
-          <p class="text-sm">Single Page</p>
+        <li></li>
+          <button
+            class="tab-button active-tab text-sm lg:px-8 lg:py-2 lg px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('singlePage', this)"
+          >
+            Single Page
+          </button>
         </li>
-        <li
-          class="lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
-        >
-          <p class="text-sm">Food Delivery</p>
+        <li class="">
+          <button
+            class="tab-button text-sm lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('foodDeliverey', this)"
+          >
+            Food Delivery
+          </button>
         </li>
-        <li
-          class="lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
-        >
-          <p class="text-sm">Portfolio</p>
+        <li class="">
+          <button
+            class="tab-button text-sm lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('portfolio', this)"
+          >
+            Portfolio
+          </button>
         </li>
-        <li
-          class="lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
-        >
-          <p class="text-sm">Ecommerce</p>
+        <li class=" ">
+          <button
+            class="tab-button text-sm lg:px-8 lg:py-2 px-2 py-1 border border-gray-400 rounded-full flex justify-center items-center"
+            onclick="showTab('ecommerce', this)"
+          >
+            Ecommerce
+          </button>
         </li>
       </ul>
     </section>
 
-    <section
-      class="lg:flex lg:w-11/12 container mx-auto gap-24 lg:mt-16 items-center p-4 lg:p-0"
-    >
-      <div class="leading-10">
-        <span class="h2-color">Innovation Unleashed</span>
-        <span class="h2"> Showcasing our work and stories</span>
-      </div>
-
-      <div class="flex flex-col gap-4">
-        <p class="lg:text-lg text-gray-400">
-          Founded in 2019 by five friends driven by passion, our tech company
-          has rapidly evolved. We've expanded our innovative services to 13+
-          countries, successfully completing 400+ projects.
-        </p>
-
-        <p class="text-md text-gray-400">
-          Time Frame: 3 to 5 months Cost: 50k - 300k
-        </p>
-        <div class="flex gap-8 items-center cursor-pointer mt-4">
-          <p>VIEW OUR SAMPLES</p>
-          <div class="w-20 border border-gray-200"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container lg:w-11/12 mx-auto rounded-full mt-12 p-4 lg:p-0">
-      <img src="./assets/images/img1.png" alt="" class="w-full" />
-    </section>
-
-    <section class="container lg:w-11/12 mx-auto mt-12 p-4 ">
-      <div class="card lg:p-8 p-4">
-        <div class="flex justify-between">
-          <p class="text-xs text-gray-400">• WORK</p>
-          <p class="text-xs text-gray-400">BY OUR creative  team</p>
+    <div class="tab-content flex flex-col" id="singlePage">
+      <section
+        class="lg:flex lg:w-11/12 container mx-auto gap-24 lg:mt-16 items-center p-4 lg:p-0"
+      >
+        <div class="leading-10">
+          <span class="h2-color">Innovation Unleashed</span>
+          <span class="h2"> Showcasing our work and stories</span>
         </div>
 
-        <div class="lg:flex justify-between mt-12">
-          <h2 class="h2-color">Our Works</h2>
-          <p class="lg:text-lg text-gray-400 lg:w-1/2 lg:mt-2 mt-4">
+        <div class="flex flex-col gap-4">
+          <p class="lg:text-lg text-gray-400">
             Founded in 2019 by five friends driven by passion, our tech company
             has rapidly evolved. We've expanded our innovative services to 13+
             countries, successfully completing 400+ projects.
           </p>
+
+          <p class="text-md text-gray-400">
+            Time Frame: 3 to 5 months Cost: 50k - 300k
+          </p>
+          <div class="flex gap-8 items-center cursor-pointer mt-4">
+            <p>VIEW OUR SAMPLES</p>
+            <div class="w-20 border border-gray-200"></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section
-      class="grid lg:w-11/12 lg:grid-cols-2 container mx-auto gap-4 p-4 lg:p-0"
-    >
-      <div class="product-card bg-cardcolor rounded-xl">
-        <img
-          src="./assets/images/Rectangle 240 (1).png"
-          alt=""
-          class="w-full object-cover"
-        />
-        <div class="px-6 py-4">
-          <div class="font-bold lg:text-xl mb-2">Posh Heights Realty</div>
+      <section
+        class="container lg:w-11/12 mx-auto rounded-full mt-12 p-4 lg:p-0"
+      >
+        <img src="./assets/images/img1.png" alt="" class="w-full" />
+      </section>
 
-          <p class="text-gray-700 text-base">Portfolio Website.</p>
+      <section class="container lg:w-11/12 mx-auto mt-12 p-4 lg:p-0">
+        <div class="card lg:p-8 p-4">
+          <div class="flex justify-between">
+            <p class="text-xs text-gray-400">• WORK</p>
+            <p class="text-xs text-gray-400">BY OUR creative  team</p>
+          </div>
+
+          <div class="lg:flex justify-between mt-12">
+            <h2 class="h2-color">Our Works</h2>
+            <p class="lg:text-lg text-gray-400 lg:w-1/2 lg:mt-2 mt-4">
+              Founded in 2019 by five friends driven by passion, our tech
+              company has rapidly evolved. We've expanded our innovative
+              services to 13+ countries, successfully completing 400+ projects.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="product-card bg-cardcolor rounded-xl">
-        <img
-          src="./assets/images/Rectangle 240 (2).png"
-          alt=""
-          class="w-full object-cover"
-        />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+      <section
+        class="grid lg:w-11/12 lg:grid-cols-2 container mx-auto gap-4 p-4 lg:p-0"
+      >
+        <div class="product-card bg-cardcolor rounded-xl">
+          <img
+            src="./assets/images/Rectangle 240 (1).png"
+            alt=""
+            class="w-full object-cover"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold lg:text-xl mb-2">Posh Heights Realty</div>
 
-          <p class="text-gray-700 text-base">Portfolio Website.</p>
+            <p class="text-gray-700 text-base">Portfolio Website.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="product-card bg-cardcolor rounded-xl">
-        <img
-          src="./assets/images/Rectangle 240 (3).png"
-          alt=""
-          class="w-full object-cover"
-        />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+        <div class="product-card bg-cardcolor rounded-xl">
+          <img
+            src="./assets/images/Rectangle 240 (2).png"
+            alt=""
+            class="w-full object-cover"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
 
-          <p class="text-gray-700 text-base">Portfolio Website.</p>
+            <p class="text-gray-700 text-base">Portfolio Website.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="product-card bg-cardcolor rounded-xl">
-        <img
-          src="./assets/images/Rectangle 240.png"
-          alt=""
-          class="w-full object-cover"
-        />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+        <div class="product-card bg-cardcolor rounded-xl">
+          <img
+            src="./assets/images/Rectangle 240 (3).png"
+            alt=""
+            class="w-full object-cover"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
 
-          <p class="text-gray-700 text-base">Portfolio Website.</p>
+            <p class="text-gray-700 text-base">Portfolio Website.</p>
+          </div>
         </div>
-      </div>
-    </section>
+
+        <div class="product-card bg-cardcolor rounded-xl">
+          <img
+            src="./assets/images/Rectangle 240.png"
+            alt=""
+            class="w-full object-cover"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Posh Heights Realty</div>
+
+            <p class="text-gray-700 text-base">Portfolio Website.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+    <div class="tab-content" id="foodDeliverey" style="display: none">
+      <div class="lg:w-11/12">Food delivery</div>
+    </div>
+
+    <div class="tab-content" id="portfolio" style="display: none">
+      <div class="flex gap-16">Portfolio</div>
+    </div>
+
+
+    <div class="tab-content" id="ecommerce" style="display: none">
+      <div class="flex gap-16">ecommerce</div>
+    </div>
+
+    <script>
+      function showTab(tabId, button) {
+        var tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(function (tab) {
+          tab.style.display = "none";
+        });
+
+        var buttons = document.querySelectorAll(".tab-button");
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active-tab");
+        });
+
+        document.getElementById(tabId).style.display = "flex";
+
+        button.classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
