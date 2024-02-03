@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-1 ">
+          <div class="col-span-1">
             <div class="flex flex-col gap-4 card p-8 rounded-xl">
               <img src="./assets/logo/3square.svg" alt="" width="44" />
               <div>
@@ -153,125 +153,148 @@
         <div class="flex flex-col">
           <div class="flex gap-3 mb-12">
             <button
-              class="text-xs text-black bg-gray-300 px-4 py-2 rounded-full"
+              class="tab-button active-tab text-xs  border border-gray-300  px-4 py-2 rounded-full"
+              onclick="showTab('webDevTab', this)"
             >
               Web Development
             </button>
             <button
-              class="text-xs text-gray-400 border border-gray-300 px-4 py-2 rounded-full"
+              class="tab-button text-xs  border border-gray-300 px-4 py-2 rounded-full"
+              onclick="showTab('appDevTab', this)"
             >
               App Development
             </button>
             <button
-              class="text-xs text-gray-400 border border-gray-300 px-4 py-2 rounded-full"
+              class="tab-button text-xs  border border-gray-300 px-4 py-2 rounded-full"
+              onclick="showTab('brandingTab', this)"
             >
               Branding
             </button>
           </div>
 
-          <div class="flex gap-16">
-            <p class="pt-3 text-gray-400">01</p>
-            <div class="flex flex-col gap-8">
-              <div class="flex gap-12 items-center">
-                <h1 class="lg:text-7xl text-4xl text-light">Single Page</h1>
-                <button class="border border-gray-300 rounded-full">
-                  <img
-                    src="./assets/logo/arrow-left.svg"
-                    alt=""
-                    class="arrow-left"
-                  />
-                </button>
+          <div class="tab-content flex flex-col" id="webDevTab">
+            <div class="flex gap-16">
+              <p class="pt-3 text-gray-400">01</p>
+              <div class="flex flex-col gap-8">
+                <div class="flex gap-12 items-center">
+                  <h1 class="lg:text-7xl text-4xl text-light">Single Page</h1>
+                  <button class="border border-gray-300 rounded-full">
+                    <img
+                      src="./assets/logo/arrow-left.svg"
+                      alt=""
+                      class="arrow-left"
+                    />
+                  </button>
+                </div>
+                <ul
+                  class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                >
+                  <li>• UX/UI Design</li>
+                  <li>• Ecommerce</li>
+                  <li>• Digital Products</li>
+                  <li>• Design System</li>
+                  <li>• Web Development</li>
+                </ul>
               </div>
-              <ul
-                class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
-              >
-                <li>• UX/UI Design</li>
-                <li>• Ecommerce</li>
-                <li>• Digital Products</li>
-                <li>• Design System</li>
-                <li>• Web Development</li>
-              </ul>
             </div>
-          </div>
-          <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5"></div>
+            <div
+              class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+            ></div>
 
-          <div class="flex gap-16">
-            <p class="pt-3 text-gray-400">02</p>
-            <div class="flex flex-col gap-8">
-              <div class="flex gap-12 items-center">
-                <h1 class="lg:text-7xl text-4xl text-light">Food Delivery</h1>
-                <button class="border border-gray-300 rounded-full">
-                  <img
-                    src="./assets/logo/arrow-left.svg"
-                    alt=""
-                    class="arrow-left"
-                  />
-                </button>
+            <div class="flex gap-16">
+              <p class="pt-3 text-gray-400">02</p>
+              <div class="flex flex-col gap-8">
+                <div class="flex gap-12 items-center">
+                  <h1 class="lg:text-7xl text-4xl text-light">Food Delivery</h1>
+                  <button class="border border-gray-300 rounded-full">
+                    <img
+                      src="./assets/logo/arrow-left.svg"
+                      alt=""
+                      class="arrow-left"
+                    />
+                  </button>
+                </div>
+                <ul
+                  class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                >
+                  <li>• UX/UI Design</li>
+                  <li>• Ecommerce</li>
+                  <li>• Digital Products</li>
+                  <li>• Design System</li>
+                  <li>• Web Development</li>
+                </ul>
               </div>
-              <ul
-                class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
-              >
-                <li>• UX/UI Design</li>
-                <li>• Ecommerce</li>
-                <li>• Digital Products</li>
-                <li>• Design System</li>
-                <li>• Web Development</li>
-              </ul>
             </div>
-          </div>
-          <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5"></div>
+            <div
+              class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+            ></div>
 
-          <div class="flex gap-16">
-            <p class="pt-3 text-gray-400">03</p>
-            <div class="flex flex-col gap-8">
-              <div class="flex gap-12 items-center">
-                <h1 class="lg:text-7xl text-4xl text-light">Portfolio</h1>
-                <button class="border border-gray-300 rounded-full">
-                  <img
-                    src="./assets/logo/arrow-left.svg"
-                    alt=""
-                    class="arrow-left"
-                  />
-                </button>
+            <div class="flex gap-16">
+              <p class="pt-3 text-gray-400">03</p>
+              <div class="flex flex-col gap-8">
+                <div class="flex gap-12 items-center">
+                  <h1 class="lg:text-7xl text-4xl text-light">Portfolio</h1>
+                  <button class="border border-gray-300 rounded-full">
+                    <img
+                      src="./assets/logo/arrow-left.svg"
+                      alt=""
+                      class="arrow-left"
+                    />
+                  </button>
+                </div>
+                <ul
+                  class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                >
+                  <li>• UX/UI Design</li>
+                  <li>• Ecommerce</li>
+                  <li>• Digital Products</li>
+                  <li>• Design System</li>
+                  <li>• Web Development</li>
+                </ul>
               </div>
-              <ul
-                class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
-              >
-                <li>• UX/UI Design</li>
-                <li>• Ecommerce</li>
-                <li>• Digital Products</li>
-                <li>• Design System</li>
-                <li>• Web Development</li>
-              </ul>
             </div>
-          </div>
-          <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5"></div>
+            <div
+              class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+            ></div>
 
-          <div class="flex gap-16">
-            <p class="pt-3 text-gray-400">04</p>
-            <div class="flex flex-col gap-8">
-              <div class="flex gap-12 items-center">
-                <h1 class="lg:text-7xl text-4xl text-light">Ecommerce</h1>
-                <button class="border border-gray-300 rounded-full">
-                  <img
-                    src="./assets/logo/arrow-left.svg"
-                    alt=""
-                    class="arrow-left"
-                  />
-                </button>
+            <div class="flex gap-16">
+              <p class="pt-3 text-gray-400">04</p>
+              <div class="flex flex-col gap-8">
+                <div class="flex gap-12 items-center">
+                  <h1 class="lg:text-7xl text-4xl text-light">Ecommerce</h1>
+                  <button class="border border-gray-300 rounded-full">
+                    <img
+                      src="./assets/logo/arrow-left.svg"
+                      alt=""
+                      class="arrow-left"
+                    />
+                  </button>
+                </div>
+                <ul
+                  class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
+                >
+                  <li>• UX/UI Design</li>
+                  <li>• Ecommerce</li>
+                  <li>• Digital Products</li>
+                  <li>• Design System</li>
+                  <li>• Web Development</li>
+                </ul>
               </div>
-              <ul
-                class="text-xs text-gray-400 grid grid-cols-2 lg:flex lg:gap-3 gap-1"
-              >
-                <li>• UX/UI Design</li>
-                <li>• Ecommerce</li>
-                <li>• Digital Products</li>
-                <li>• Design System</li>
-                <li>• Web Development</li>
-              </ul>
             </div>
+            <div
+              class="w-full border border-gray-400 opacity-50 mt-5 mb-5"
+            ></div>
           </div>
-          <div class="w-full border border-gray-400 opacity-50 mt-5 mb-5"></div>
+
+          <!-- Tab content 02 -->
+          <div class="tab-content" id="appDevTab" style="display: none">
+            <div class="flex gap-16">App Development</div>
+          </div>
+
+          <!-- Tab Content 03 -->
+          <div class="tab-content" id="brandingTab" style="display: none">
+            <div class="flex gap-16">Branding</div>
+          </div>
         </div>
       </div>
     </section>
@@ -369,7 +392,7 @@
       </div>
     </section>
 
-    <section class="mx-auto p-8 ">
+    <section class="mx-auto p-8">
       <div class="swiper2">
         <div class="swiper-wrapper font-6xl">
           <div class="swiper-slide">
@@ -466,6 +489,27 @@
           el: ".swiper-scrollbar",
         },
       });
+    </script>
+
+    <script>
+      function showTab(tabId, button) {
+        var tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(function (tab) {
+          tab.style.display = "none";
+        });
+
+        
+        var buttons = document.querySelectorAll(".tab-button");
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active-tab");
+        });
+
+        
+        document.getElementById(tabId).style.display = "flex";
+
+        
+        button.classList.add("active-tab");
+      }
     </script>
   </body>
 </html>
